@@ -3,7 +3,7 @@ import router from '@/router';
 import store from '@/store';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: process.env.VUE_APP_BASE_URL_API,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
