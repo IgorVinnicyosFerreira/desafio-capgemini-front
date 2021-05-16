@@ -1,24 +1,21 @@
 # desafio-capgemini-front
 
-## Project setup
+## Instalação das bibliotecas node
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Variaveis de ambiente
+
+Crie um arquivo .env na raiz do projeto e copie o valor do .env.example para ele
+
+### Inicie o servidor local
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
