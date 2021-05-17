@@ -35,11 +35,12 @@ export default {
       });
     },
     formatDate(date){
-      const months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"];
       let dateObject = new Date(date);
-      let formattedDate = ((dateObject.getDate() + " " + months[(dateObject.getMonth())] + " " + dateObject.getFullYear()));
-      
-      return formattedDate;
+      return dateObject.toLocaleDateString('pt-br', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'}
+      );
     }
   }
 }
